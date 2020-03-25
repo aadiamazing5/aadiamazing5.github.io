@@ -148,7 +148,7 @@ img::-moz-selection {
 } */
 
 #mainNav {
-  background-color: #212529;
+  background-color: #000;
 }
 
 #mainNav .navbar-toggler {
@@ -219,6 +219,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+ 
 }
 
 header.masthead .intro-text {
@@ -270,7 +271,6 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -282,6 +282,8 @@ header.masthead .intro-text .intro-heading {
 #experience .experience-item {
   right: 0;
   margin: 0 0 15px;
+  position: relative;
+  top: -40px;
 }
 
 #experience .experience-item .experience-link {
@@ -350,7 +352,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 767px) {
-  #experience .experience-item {
+#experience .experience-item {
     margin: 0 0 30px;
   }
 }
@@ -879,12 +881,18 @@ section#contact :-ms-input-placeholder {
 .footer {
   padding: 25px 0;
   text-align: center;
+  background-color: black;
+  height: 20vh;
 }
 
 .footer span.copyright {
-  font-size: 90%;
+  font-size: 130%;
+  color: white;
   line-height: 40px;
   text-transform: none;
+  position: relative;
+  /* left: 39.2vh; */
+  left: 383px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -937,9 +945,9 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #000; /* change this to alter social button background color*/
   position: relative;
-  top: -10px;
+  top: 5vh;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
