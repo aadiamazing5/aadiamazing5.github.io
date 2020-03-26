@@ -151,6 +151,36 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 } */
 
+/*--------------------------*/
+
+.btn-primary2 {
+  /* background-color: #000000; */
+  border-color: #fed136;
+  border-width: medium;
+  transition-duration: 0.3s;
+  color: white;
+  border-radius: 40px; 
+  height: 70px;
+  width: 200px;
+  text-align: center;
+}
+
+.btn-primary2:active, .btn-primary2:focus, .btn-primary2:hover {
+  background-color: #fec810 !important;
+  border-color: #fec810 !important;
+  border-width: medium;
+  color: white;
+}
+
+.contactbtntext{
+  position: relative;
+  top: -15px;
+}
+
+/* .btn-primary1:active, .btn-primary1:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+} */
+
 #mainNav {
   background-color: #000;
 }
@@ -1100,3 +1130,4 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+ 
