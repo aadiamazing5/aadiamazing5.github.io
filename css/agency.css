@@ -760,10 +760,6 @@ header.masthead .intro-text .intro-heading {
   background-color: #212529;
 }
 
-.img-fluid {
-  height: 40vh;
-}
-
 
 
 .timeline {
@@ -1089,7 +1085,7 @@ ul.social-buttons1 {
 }
 
 ul.social-buttons1 li a {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 50px;
   display: block;
   width: 50px;
@@ -1130,4 +1126,17 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+.div_portfolio_icons {
+  display:inline;  
+  position: relative;
+  left: -22px;   
+  top: -10px; 
+}
+
+.ul_portfolio_icons li{
+  display: inline;
+  margin: 1rem;
+}
+
  
