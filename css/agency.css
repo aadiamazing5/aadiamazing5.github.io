@@ -950,7 +950,7 @@ header.masthead .intro-text .intro-heading {
 
 .new-info {
   position: relative;
-  left: 480px;
+  /* left: 480px; */
   font-size: 20px;
   font-style: normal;
   line-height: 40px;
@@ -1075,7 +1075,26 @@ section#contact :-ms-input-placeholder {
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+} 
+
+@media screen and (max-width: 990px) {
+  .footer span.copyright {
+    left: 0;
+  } 
+
+  .footer {
+    height: 25vh;
+  }
 }
+
+@media screen and (max-width: 660px) {
+  .footer span.copyright {
+    left: 0;
+  } 
+
+
+}
+
 
 ul.social-buttons1 {
   margin-bottom: 0;
