@@ -252,8 +252,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
- 
+  background-size: auto;
 }
 
 header.masthead .intro-text {
@@ -284,11 +283,12 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  header.masthead .intro-text .intro-lead-in { /** this is the one that matters**/
+  header.masthead .intro-text .intro-lead-in { 
     font-size: 25px;
     font-style: normal;
     line-height: 40px;
@@ -303,7 +303,7 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
-}
+} 
 
 .service-heading {
   margin: 15px 0;
@@ -463,6 +463,13 @@ header.masthead .intro-text .intro-heading {
   /* IE 9 */
   transform: rotate(90deg);
   background-color: #212529;
+}
+
+@media screen and (min-width: 1300px) {
+  .experience-item {
+    padding-bottom: 7em;
+    padding-top: 1.5em;
+  } 
 }
 
 .inner {
@@ -950,12 +957,37 @@ header.masthead .intro-text .intro-heading {
 
 .new-info {
   position: relative;
-  left: 480px;
+  left: 515px;
   font-size: 20px;
   font-style: normal;
   line-height: 40px;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  max-width: 750px;
+  max-width: 730px;
+}
+
+@media screen and (max-width: 990px) {
+  .new-info {
+    left: 0px;
+    top: -30px;
+    text-align: center;
+    padding: 1em;
+  } 
+}
+
+@media screen and (min-width: 1300px) {
+  .new-info {
+    left: 830px;
+    top: 50px;
+  } 
+}
+
+@media screen and (max-width: 660px) {
+  .new-info {
+      left: 0px;
+      top: -30px;
+      text-align: center;
+      padding: 1em;
+  } 
 }
 
 .container1 {
@@ -968,13 +1000,37 @@ header.masthead .intro-text .intro-heading {
 }
 
 .team-member img {
-  width: 350px;
-  height: 350px;
+  width: 370px;
+  height: 370px;
   border: 10px solid rgba(0, 0, 0, 0.1);
   position: relative;
   top: -330px;
-  left: -400px;
+  left: -370px;
+} 
+
+@media screen and (max-width: 990px) {
+  .team-member img {
+    opacity: 0;
+  } 
 }
+
+@media screen and (min-width: 1300px) {
+  .team-member img {
+    width: 450px;
+    height: 450px;
+    top: -330px;
+    left: -400px;
+  } 
+}
+
+@media screen and (max-width: 660px) {
+  .footer span.copyright {
+    left: 0;
+  } 
+
+
+}
+
 
 .team-member h4 {
   margin-top: 20px;
@@ -1091,8 +1147,6 @@ section#contact :-ms-input-placeholder {
   .footer span.copyright {
     left: 0;
   } 
-
-
 }
 
 
@@ -1185,3 +1239,4 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   width: 4em;
   height: 4em;
 } 
+
