@@ -237,7 +237,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #000000;
+    background-color: black;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -245,24 +245,90 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
+@media screen and (max-width: 990px) {
+  #mainNav.navbar-shrink {
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mainNav.navbar-shrink {
+    background-color: none;
+  }
+}
+
+.hero-background{
+  width:100vw;
+  height:100vh;
+  background-color:#000;
+}
+
+.hero-background .scroll-down i{
+  color:#fff;
+  font-size:1.625rem;
+}
+.hero-background .hero-image{
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:opacity(.4)}
+
+.hero-background .hero-content{
+    position:relative;
+    top:0;
+    transform:translateY(-40%);width:100%;
+    transform:translateX(30%);
+    box-align: center;
+  }
+  
+.hero-background .hero-content .hero-header{
+    font:900 4.55rem Lato,sans-serif;
+    color:#fff;
+  }
+  
+.hero-background .hero-content .hero-tagline{
+    font:400 1.8525rem Lato,sans-serif;
+    padding-top:.5rem;
+    color:#fff}
+    
+.hero-background .hero-content .hero-socials{
+    padding-top:1.8rem;
+  }
+
+.hero-background .hero-content .hero-socials .fab,.hero-background .hero-content .hero-socials .fas{
+    font-size:1.6rem;color:#fff;margin-right:1.1rem
+  }
+  
+
+@keyframes prompt{0%{bottom:4rem}50%{bottom:5rem}100%{bottom:4rem}}
+
+.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/backgrounds/black6.jpg");
+  /* background-image: url("../img/backgrounds/black66.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: auto;
-}
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: -126%;
+  box-sizing: border-box;
+} 
 
-header.masthead .intro-text {
+.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
   position: relative;
-  top: -60px;
+  transform: translate(0, 15%);
 }
 
-header.masthead .intro-text .intro-lead-in {
+.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
@@ -272,7 +338,7 @@ header.masthead .intro-text .intro-lead-in {
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-header.masthead .intro-text .intro-heading {
+.masthead .intro-text .intro-heading {
   font-size: 75px;
     font-weight: 700;
     line-height: 75px;
@@ -284,11 +350,11 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
 
-  header.masthead .intro-text {
+  .masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  header.masthead .intro-text .intro-lead-in { 
+  .masthead .intro-text .intro-lead-in { 
     font-size: 25px;
     font-style: normal;
     line-height: 40px;
@@ -297,7 +363,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 30px;
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
-  header.masthead .intro-text .intro-heading {
+  .masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
@@ -305,13 +371,75 @@ header.masthead .intro-text .intro-heading {
   }
 } 
 
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
+/* @media screen and (max-width: 990px) {
+  .intro-lead-in{
+    top: 10em;
+  } 
+  .intro-heading{
+    font-size: 1px;
+  } 
+  
+  .intro-text{
+    transform: translate(0, 10%);
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .intro-lead-in{
+    transform: translateY(-0.5em);
+  } 
+  
+  .intro-text{
+    transform: translate(0, 10%);
+  } 
+
+  .masthead .intro-text .intro-heading {
+    font-size: 60px;
+  } 
+
+  .masthead {
+    background-image: url("../img/backgrounds/black66.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    transform: translateY(8em);
+  }
+} 
+
+@media screen and (max-width: 615px) {
+  .intro-lead-in{
+    transform: translateY(3em);
+  } 
 }
 
-/* ------------------- */
+@media screen and (min-width: 1400px) {
+  .masthead{
+    transform: translate(0, 15%);
+  }
+} 
 
+@media screen and (min-height: 800px) {
+  @media screen and (max-width: 1400px) {
+    .masthead{
+      transform: translate(0, 15%);
+    } 
+  }
+  @media screen and (max-width: 767px) {
+    .masthead{
+      transform: translate(0, 55%);
+    } 
+  }
+  @media screen and (max-width: 615px) {
+    .masthead{
+      transform: translate(0, 40%);
+    } 
+  }
+
+} 
+
+
+/* ------------------- */
 
 #experience .experience-item {
   right: 0;
@@ -383,12 +511,6 @@ header.masthead .intro-text .intro-heading {
 
 #experience * {
   z-index: 2;
-}
-
-@media (min-width: 768px) {
-#experience .experience-item {
-    margin: 0 0 30px;
-  }
 }
 
 .experience-modal .modal-dialog {
@@ -465,12 +587,19 @@ header.masthead .intro-text .intro-heading {
   background-color: #212529;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
   .experience-item {
     padding-bottom: 7em;
     padding-top: 1.5em;
   } 
 }
+
+@media screen and (max-width: 768px) {
+  #experience{
+   transform: translateY(0em);
+  }
+}
+
 
 .inner {
   position: relative;
@@ -512,6 +641,7 @@ header.masthead .intro-text .intro-heading {
   color: #000;
   /*cursor: pointer;*/
 }
+
 
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before {
   width: 35px;
@@ -595,6 +725,12 @@ header.masthead .intro-text .intro-heading {
   margin: 20px 0 30px;
   color: grey;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+} 
+
+@media screen and (max-width: 768px) {
+  .skills {
+    transform: translate(0, 6em);
+  }
 }
 
 /* .skillsdetails {
@@ -974,7 +1110,7 @@ header.masthead .intro-text .intro-heading {
   } 
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
   .new-info {
     left: 830px;
     top: 50px;
@@ -986,7 +1122,7 @@ header.masthead .intro-text .intro-heading {
       left: 0px;
       top: -30px;
       text-align: center;
-      padding: 1em;
+      padding: 1.3em;
   } 
 }
 
@@ -1014,7 +1150,7 @@ header.masthead .intro-text .intro-heading {
   } 
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1400px) {
   .team-member img {
     width: 450px;
     height: 450px;
