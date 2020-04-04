@@ -886,7 +886,7 @@ img::-moz-selection {
 @media screen and (max-width: 660px) {
   .new-info {
       left: 0px;
-      top: -30px;
+      top: -40px;
       text-align: center;
       padding: 1.3em;
   } 
