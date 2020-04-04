@@ -294,6 +294,9 @@ img::-moz-selection {
   position: relative;
   top: -126%;
   box-sizing: border-box;
+  display: flex-box;
+  justify-content: center;
+  align-items: center;
 } 
 
 .masthead .intro-text {
@@ -366,6 +369,7 @@ img::-moz-selection {
     background-position: center center;
     background-size: cover;
     transform: translateY(8em);
+    vertical-align: middle;
   }
 } 
 
